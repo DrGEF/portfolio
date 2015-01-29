@@ -1,11 +1,40 @@
 @import "vars"
+//@import "../bower_components/reset-scss/reset"
 
 // ********************   top block   *********************
 .top-block
+  position: relative
   width: 100%
   height: 100vh
   background-color: $dark
   display: block
+  .menu-2
+    display: none
+  .menu-1
+    position: absolute
+    top: 0
+    right: 0
+    width: 70px
+    height: 100%
+    .open-menu
+      width: 70px
+      height: 70px
+    .buttons
+      position: absolute
+      top: 70px
+      bottom: 0
+      right: 0
+      left: 0
+      .button
+        position: relative
+        width: 70px
+        height: 50%
+        .center-align
+          display: table-cell
+          vertical-align: middle
+// *************** top block end *****************
+.dev-block, .design-block, .portfolio, .contact, .contact-me, .footer
+  display: none
 
 
   // ****************** OLD CODE HERE *********************

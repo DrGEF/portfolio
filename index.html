@@ -1,71 +1,94 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>html for pyramidmind portfolio</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="css/styles.css"/>
-    </head>
-    <body>
-        <div class="top-block">
-            <div class="menu-1">
-                <div class="open-menu"><img src="images/menu_button.png" alt="Открыть меню"/></div>
+<head>
+    <meta charset="UTF-8">
+    <title>html for pyramidmind portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<div class="top-block">
+    <div class="menu-1">
+        <div class="open-menu" onclick="openMenu()"><img src="images/menu_button.png" alt="Открыть меню"/></div>
+        <div class="buttons">
+            <div class="button"><div class="center-align"><div class="vertical-align">Портфолио</div></div></div>
+            <div class="button">Контакты</div>
+        </div>
 
-            </div>
-            <div class="menu-2">
-                <div class="menu-logo"><img src="images/menu-logo.png" alt=""/></div>
-                <div class="close"><img src="images/menu_close.png" alt=""/></div>
-                <ul>
-                    <li><a href="#"><span class="second-menu-block">block text 1</span></a></li>
-                    <li><a href="#"><span class="second-menu-block">block text 2</span></a></li>
-                    <li><a href="#"><span class="second-menu-block">block text 3</span></a></li>
-                    <li><a href="#"><span class="second-menu-block">block text 4</span></a></li>
-                    <li><a href="#"><span class="second-menu-block">block text 5</span></a></li>
-                </ul>
-            </div>
-            <div class="main-logo-place">
-                <img src="images/logo.png" alt="Pyramid Mind"/>
-            </div>
+    </div>
+    <div class="menu-2">
+        <div class="menu-header">
+            <div class="menu-logo"><img src="images/menu-logo.png" alt=""/></div>
+            <div class="close"><img src="images/menu_close.png" alt=""/></div>
         </div>
-        <div class="dev-block">
-            <div class="col-lg-6"><img src="images/dev.png" alt=""/></div>
-            <div class="col-lg-6">
-                <h2>dev block</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum eius eos illo in, inventore iusto maiores natus nihil, nisi non omnis optio quos sapiente suscipit tempore voluptas. Eum, quos.</p>
-            </div>
+        <ul>
+            <li><a href="#">
+                <div class="second-menu-block">block text 1</div>
+            </a></li>
+            <li><a href="#">
+                <div class="second-menu-block">block text 2</div>
+            </a></li>
+            <li><a href="#">
+                <div class="second-menu-block">block text 3</div>
+            </a></li>
+            <li><a href="#">
+                <div class="second-menu-block">block text 4</div>
+            </a></li>
+            <li><a href="#">
+                <div class="second-menu-block">block text 5</div>
+            </a></li>
+        </ul>
+    </div>
+    <div class="main-logo-place">
+        <img src="images/logo.png" alt="Pyramid Mind"/>
+    </div>
+</div>
+<div class="dev-block">
+    <div class="col-lg-6"><img src="images/dev.png" alt=""/></div>
+    <div class="col-lg-6">
+        <h2>dev block</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum eius eos illo in, inventore iusto
+            maiores natus nihil, nisi non omnis optio quos sapiente suscipit tempore voluptas. Eum, quos.</p>
+    </div>
+</div>
+<div class="design-block">
+    <div class="col-lg-6">
+        <h2>Design block</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias, aut, consequatur corporis dicta dolor eius
+            hic, magnam modi nihil quidem quisquam recusandae reiciendis. Architecto culpa illo impedit maxime sint.</p>
+    </div>
+    <div class="col-lg-6"><img src="images/design.png" alt=""/></div>
+</div>
+<div class="portfolio">
+    <div class="centered">
+        <h3>Portfolio</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa delectus dolores eius error
+            expedita, harum id ipsa iure, labore minima mollitia officiis quibusdam ullam ut veniam voluptates. Illo,
+            sequi.</p>
+    </div>
+</div>
+<div class="contact">
+    <div class="col-lg-6">
+        <ul>
+            <li><span class="phone-img"></span>+7 (927) 09-09-129</li>
+            <li><span class="email-img"></span>thedrgef@gmail.com</li>
+            <li><span class="skype-img"></span>pyramid</li>
+        </ul>
+    </div>
+    <div class="col-lg-6">
+        <div class="twitter">
+            <!--twitter informer here-->
         </div>
-        <div class="design-block">
-            <div class="col-lg-6">
-                <h2>Design block</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias, aut, consequatur corporis dicta dolor eius hic, magnam modi nihil quidem quisquam recusandae reiciendis. Architecto culpa illo impedit maxime sint.</p>
-            </div>
-            <div class="col-lg-6"><img src="images/design.png" alt=""/></div>
-        </div>
-        <div class="portfolio">
-            <div class="centered">
-                <h3>Portfolio</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa delectus dolores eius error expedita, harum id ipsa iure, labore minima mollitia officiis quibusdam ullam ut veniam voluptates. Illo, sequi.</p>
-            </div>
-        </div>
-        <div class="contact">
-            <div class="col-lg-6">
-                <ul>
-                    <li><span class="phone-img"></span>+7 (927) 09-09-129</li>
-                    <li><span class="email-img"></span>thedrgef@gmail.com</li>
-                    <li><span class="skype-img"></span>pyramid</li>
-                </ul>
-            </div>
-            <div class="col-lg-6">
-                <div class="twitter">
-                    <!--twitter informer here-->
-                </div>
-            </div>
-        </div>
-        <div class="contact-me"></div>
-        <div class="footer"></div>
-        <!-- **************** js begin ******************* -->
-        <script src="js/jquery-1.11.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+    </div>
+</div>
+<div class="contact-me"></div>
+<div class="footer"></div>
+<!-- **************** js begin ******************* -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>

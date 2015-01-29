@@ -1,7 +1,35 @@
 .top-block {
+  position: relative;
   width: 100%;
   height: 100vh;
   background-color: #404148;
   display: block; }
+  .top-block .menu-2 {
+    display: none; }
+  .top-block .menu-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 100%; }
+    .top-block .menu-1 .open-menu {
+      width: 70px;
+      height: 70px; }
+    .top-block .menu-1 .buttons {
+      position: absolute;
+      top: 70px;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+      .top-block .menu-1 .buttons .button {
+        position: relative;
+        width: 70px;
+        height: 50%; }
+        .top-block .menu-1 .buttons .button .center-align {
+          display: table-cell;
+          vertical-align: middle; }
+
+.dev-block, .design-block, .portfolio, .contact, .contact-me, .footer {
+  display: none; }
 
 /*# sourceMappingURL=styles.css.map */
