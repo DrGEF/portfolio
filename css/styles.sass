@@ -42,26 +42,36 @@ a
     .open-menu
       width: 70px
       height: 70px
+      cursor: pointer
     .buttons
       position: absolute
       top: 70px
       bottom: 0
       right: 0
       left: 0
-      .button
+      a.button
+        display: block
         cursor: pointer
         width: 70px
         height: 50%
         background-color: $lightThanDark
         color: $darkerThanWhite
         font-size: 15px
+        position: relative
         //******animation and hover effect begin *****
-        -webkit-transition: all 0.3s
-        -moz-transition: all 0.3s
-        transition: all 0.3s
-        // separator here
-        //&:first-child
-        //  border-bottom: 1px solid $darkForBorder
+        -webkit-transition: all 0.4s
+        -moz-transition: all 0.4s
+        transition: all 0.4s
+        &:first-child:after
+          position: absolute
+          content: ''
+          width: 40px
+          height: 2px
+          border-bottom: 1px solid $lighterForBorder
+          bottom: 0px
+          left: 15px
+        &:first-child:hover:after
+          display: none
         &:hover
           background-color: $darkerThanWhite
           color: $lightThanDark

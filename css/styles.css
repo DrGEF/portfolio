@@ -38,35 +38,48 @@ a {
     z-index: 2; }
     .top-block .menu-1 .open-menu {
       width: 70px;
-      height: 70px; }
+      height: 70px;
+      cursor: pointer; }
     .top-block .menu-1 .buttons {
       position: absolute;
       top: 70px;
       bottom: 0;
       right: 0;
       left: 0; }
-      .top-block .menu-1 .buttons .button {
+      .top-block .menu-1 .buttons a.button {
+        display: block;
         cursor: pointer;
         width: 70px;
         height: 50%;
         background-color: #45464d;
         color: #fdfdfd;
         font-size: 15px;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s; }
-        .top-block .menu-1 .buttons .button:hover {
+        position: relative;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s; }
+        .top-block .menu-1 .buttons a.button:first-child:after {
+          position: absolute;
+          content: "";
+          width: 40px;
+          height: 2px;
+          border-bottom: 1px solid #53555e;
+          bottom: 0px;
+          left: 15px; }
+        .top-block .menu-1 .buttons a.button:first-child:hover:after {
+          display: none; }
+        .top-block .menu-1 .buttons a.button:hover {
           background-color: #fdfdfd;
           color: #45464d; }
-        .top-block .menu-1 .buttons .button .center-align {
+        .top-block .menu-1 .buttons a.button .center-align {
           width: 100%;
           height: 100%;
           display: table;
           text-align: center; }
-          .top-block .menu-1 .buttons .button .center-align .center-align1 {
+          .top-block .menu-1 .buttons a.button .center-align .center-align1 {
             display: table-cell;
             vertical-align: middle; }
-            .top-block .menu-1 .buttons .button .center-align .center-align1 .vertical-align {
+            .top-block .menu-1 .buttons a.button .center-align .center-align1 .vertical-align {
               width: 10px;
               word-wrap: break-word;
               display: inline-block; }
