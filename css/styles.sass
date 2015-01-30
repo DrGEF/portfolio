@@ -1,6 +1,14 @@
 @import "vars"
-//@import "../bower_components/reset-scss/reset"
+@import "../bower_components/reset-css/reset.css"
+@import "bootstrap.min.css"
+@import "buttons.css"
 
+// ********************    a reset    *********************
+a
+  color: inherit
+  &:hover
+    color: inherit
+    text-decoration: none
 // ********************   top block   *********************
 .top-block
   position: relative
@@ -8,6 +16,20 @@
   height: 100vh
   background-color: $dark
   display: block
+  .main-logo-place
+    position: absolute
+    width: 100%
+    height: 100%
+    display: table
+    .logo-place
+      display: table-cell
+      vertical-align: middle
+      text-align: center
+      .logo
+        display: inline-block
+        width: 600px
+        height: 330px
+        background-image: url(../images/logo.png)
   .menu-2
     display: none
   .menu-1
@@ -16,6 +38,7 @@
     right: 0
     width: 70px
     height: 100%
+    z-index: 2
     .open-menu
       width: 70px
       height: 70px
@@ -26,45 +49,35 @@
       right: 0
       left: 0
       .button
-        position: relative
+        cursor: pointer
         width: 70px
         height: 50%
+        background-color: $lightThanDark
+        color: $darkerThanWhite
+        font-size: 15px
+        //******animation and hover effect begin *****
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        transition: all 0.3s
+        // separator here
+        //&:first-child
+        //  border-bottom: 1px solid $darkForBorder
+        &:hover
+          background-color: $darkerThanWhite
+          color: $lightThanDark
+        //******animation and hover effect end *****
         .center-align
-          display: table-cell
-          vertical-align: middle
+          width: 100%
+          height: 100%
+          display: table
+          text-align: center
+          .center-align1
+            display: table-cell
+            vertical-align: middle
+            .vertical-align
+              width: 10px
+              word-wrap: break-word
+              display: inline-block
 // *************** top block end *****************
 .dev-block, .design-block, .portfolio, .contact, .contact-me, .footer
   display: none
-
-
-  // ****************** OLD CODE HERE *********************
-  //
-  //.menu-right
-  //  text-align: right
-  //  float: right
-  //  height: 100%
-  //  width: 20%
-  //  //display: none
-  //  background-color: $contact
-  //  color: $contact-text
-  //  .close-right
-  //    display: inline-block
-  //    padding: 10px
-  //    cursor: pointer
-  //  ul
-  //    display: block
-  //    text-align: center
-  //    padding: 0
-  //    margin: 0
-  //    a
-  //      color: inherit
-  //      &:hover
-  //        text-decoration: none
-  //      li
-  //        list-style: none
-  //        padding: 10px 0
-  //        margin-right: 0
-  //        font-size: 16px
-  //        &:hover
-  //          background-color: rgba(255, 255, 255, 0.16)
-// ******************** top block end *********************

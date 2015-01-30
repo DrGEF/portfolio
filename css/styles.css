@@ -1,9 +1,32 @@
+@import url(../bower_components/reset-css/reset.css);
+@import url(bootstrap.min.css);
+@import url(buttons.css);
+a {
+  color: inherit; }
+  a:hover {
+    color: inherit;
+    text-decoration: none; }
+
 .top-block {
   position: relative;
   width: 100%;
   height: 100vh;
   background-color: #404148;
   display: block; }
+  .top-block .main-logo-place {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table; }
+    .top-block .main-logo-place .logo-place {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+      .top-block .main-logo-place .logo-place .logo {
+        display: inline-block;
+        width: 600px;
+        height: 330px;
+        background-image: url(../images/logo.png); }
   .top-block .menu-2 {
     display: none; }
   .top-block .menu-1 {
@@ -11,7 +34,8 @@
     top: 0;
     right: 0;
     width: 70px;
-    height: 100%; }
+    height: 100%;
+    z-index: 2; }
     .top-block .menu-1 .open-menu {
       width: 70px;
       height: 70px; }
@@ -22,12 +46,30 @@
       right: 0;
       left: 0; }
       .top-block .menu-1 .buttons .button {
-        position: relative;
+        cursor: pointer;
         width: 70px;
-        height: 50%; }
+        height: 50%;
+        background-color: #45464d;
+        color: #fdfdfd;
+        font-size: 15px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; }
+        .top-block .menu-1 .buttons .button:hover {
+          background-color: #fdfdfd;
+          color: #45464d; }
         .top-block .menu-1 .buttons .button .center-align {
-          display: table-cell;
-          vertical-align: middle; }
+          width: 100%;
+          height: 100%;
+          display: table;
+          text-align: center; }
+          .top-block .menu-1 .buttons .button .center-align .center-align1 {
+            display: table-cell;
+            vertical-align: middle; }
+            .top-block .menu-1 .buttons .button .center-align .center-align1 .vertical-align {
+              width: 10px;
+              word-wrap: break-word;
+              display: inline-block; }
 
 .dev-block, .design-block, .portfolio, .contact, .contact-me, .footer {
   display: none; }
