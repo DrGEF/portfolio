@@ -28,7 +28,31 @@ a {
         height: 330px;
         background-image: url(../images/logo.png); }
   .top-block .menu-2 {
-    display: none; }
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #45464d; }
+    .top-block .menu-2 .menu-header {
+      height: 70px;
+      position: relative;
+      width: 100%;
+      background-color: #fff; }
+      .top-block .menu-2 .menu-header .menu-logo {
+        background-image: url(../images/menu-logo.png);
+        width: 36px;
+        height: 39px;
+        position: absolute;
+        top: 50%;
+        left: 50%; }
+      .top-block .menu-2 .menu-header .close {
+        position: absolute;
+        left: 26px;
+        top: 26px;
+        background-image: url(../images/menu_close.png);
+        width: 18px;
+        height: 18px; }
   .top-block .menu-1 {
     position: absolute;
     top: 0;
