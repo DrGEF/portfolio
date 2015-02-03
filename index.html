@@ -1,107 +1,99 @@
 <!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>html for pyramidmind portfolio</title>
-    <link rel="stylesheet" href="css/styles.css"/>
-</head>
-<body>
-<div class="top-block">
-    <div class="menu-1">
-        <div class="open-menu" onclick="openMenu()"><img src="images/menu_button.png" alt="Открыть меню"/></div>
-        <div class="buttons">
-            <a href="#" class="button">
-                <div class="center-align">
-                    <div class="center-align1">
-                        <div class="vertical-align">Портфолио</div>
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <title>html for pyramidmind portfolio</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+    </head>
+    <body>
+        <div class="top-block">
+            <div class="menu-1">
+                <div class="open-menu" onclick="openMenu()"><img src="images/menu_button.png" alt="Открыть меню"/></div>
+                <div class="buttons">
+                    <a href="#" class="button">
+                        <div class="center-align">
+                            <div class="center-align1">
+                                <div class="vertical-align">Портфолио</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="button">
+                        <div class="center-align">
+                            <div class="center-align1">
+                                <div class="vertical-align">Контакты</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a href="#" class="button">
-                <div class="center-align">
-                    <div class="center-align1">
-                        <div class="vertical-align">Контакты</div>
-                    </div>
+            </div>
+            <div class="menu-2">
+                <div class="menu-header">
+                    <div class="menu-logo"><img src="images/menu-logo.png" alt=""/></div>
+                    <div onclick="closeMenu()" class="close-btn"><img src="images/menu_close.png" alt=""/></div>
                 </div>
-            </a>
+                <ul>
+                    <!-- <li><a href="#" class="in-menu-2"><span><span><span>Кто мы?</span><span>Кто мы?</span></span></span></a></li> -->
+                   <!--  <li><a href="#" class="in-menu-2"><span><span><span>О нас</span><span>О нас</span></span></span></a></li> -->
+                    <li><a href="#" class="in-menu-2"><span><span><span>Портфолио</span><span>Портфолио</span></span></span></a></li>
+                    <!-- <li><a href="#" class="in-menu-2"><span><span><span>Вакансии</span><span>Вакансии</span></span></span></a></li> -->
+                    <li><a href="#" class="in-menu-2"><span><span><span>Контакты</span><span>Контакты</span></span></span></a></li>
+                    <li><a href="#" class="in-menu-2"><span><span><span>Блог</span><span>Блог</span></span></span></a></li>
+                </ul>
+                <div class="soc-block">
+                    <a href="https://twitter.com/share?url=http://pyramidmind.ru"><span class="twitter"></span></a>
+                    <div class="sep"></div>
+                    <a href="#"><span class="vk lbl"></span></a>
+                </div>
+            </div>
+            <div class="main-logo-place">
+                <div class="logo-place">
+                    <div class="logo"></div>
+                </div>
+            </div>
         </div>
-
-    </div>
-    <div class="menu-2">
-        <div class="menu-header">
-            <div class="menu-logo"><img src="images/menu-logo.png" alt=""/></div>
-            <div class="close"><img src="images/menu_close.png" alt=""/></div>
+        <div class="dev-block">
+            <div class="col-lg-6"><img src="images/dev.png" alt=""/></div>
+            <div class="col-lg-6">
+                <h2>dev block</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum eius eos illo in, inventore iusto
+                maiores natus nihil, nisi non omnis optio quos sapiente suscipit tempore voluptas. Eum, quos.</p>
+            </div>
         </div>
-        <ul>
-            <li><a href="#">
-                <div class="second-menu-block">block text 1</div>
-            </a></li>
-            <li><a href="#">
-                <div class="second-menu-block">block text 2</div>
-            </a></li>
-            <li><a href="#">
-                <div class="second-menu-block">block text 3</div>
-            </a></li>
-            <li><a href="#">
-                <div class="second-menu-block">block text 4</div>
-            </a></li>
-            <li><a href="#">
-                <div class="second-menu-block">block text 5</div>
-            </a></li>
-        </ul>
-    </div>
-    <div class="main-logo-place">
-        <div class="logo-place">
-            <div class="logo"></div>
+        <div class="design-block">
+            <div class="col-lg-6">
+                <h2>Design block</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias, aut, consequatur corporis dicta dolor eius
+                hic, magnam modi nihil quidem quisquam recusandae reiciendis. Architecto culpa illo impedit maxime sint.</p>
+            </div>
+            <div class="col-lg-6"><img src="images/design.png" alt=""/></div>
         </div>
-    </div>
-</div>
-<div class="dev-block">
-    <div class="col-lg-6"><img src="images/dev.png" alt=""/></div>
-    <div class="col-lg-6">
-        <h2>dev block</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum eius eos illo in, inventore iusto
-            maiores natus nihil, nisi non omnis optio quos sapiente suscipit tempore voluptas. Eum, quos.</p>
-    </div>
-</div>
-<div class="design-block">
-    <div class="col-lg-6">
-        <h2>Design block</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias, aut, consequatur corporis dicta dolor eius
-            hic, magnam modi nihil quidem quisquam recusandae reiciendis. Architecto culpa illo impedit maxime sint.</p>
-    </div>
-    <div class="col-lg-6"><img src="images/design.png" alt=""/></div>
-</div>
-<div class="portfolio">
-    <div class="centered">
-        <h3>Portfolio</h3>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa delectus dolores eius error
-            expedita, harum id ipsa iure, labore minima mollitia officiis quibusdam ullam ut veniam voluptates. Illo,
-            sequi.</p>
-    </div>
-</div>
-<div class="contact">
-    <div class="col-lg-6">
-        <ul>
-            <li><span class="phone-img"></span>+7 (927) 09-09-129</li>
-            <li><span class="email-img"></span>thedrgef@gmail.com</li>
-            <li><span class="skype-img"></span>pyramid</li>
-        </ul>
-    </div>
-    <div class="col-lg-6">
-        <div class="twitter">
-            <!--twitter informer here-->
+        <div class="portfolio">
+            <div class="centered">
+                <h3>Portfolio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa delectus dolores eius error
+                expedita, harum id ipsa iure, labore minima mollitia officiis quibusdam ullam ut veniam voluptates. Illo,
+                sequi.</p>
+            </div>
         </div>
-    </div>
-</div>
-<div class="contact-me"></div>
-<div class="footer"></div>
-<!-- **************** js begin ******************* -->
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-</body>
+        <div class="contact">
+            <div class="col-lg-6">
+                <ul>
+                    <li><span class="phone-img"></span>+7 (927) 09-09-129</li>
+                    <li><span class="email-img"></span>thedrgef@gmail.com</li>
+                    <li><span class="skype-img"></span>pyramid</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="twitter">
+                    <!--twitter informer here-->
+                </div>
+            </div>
+        </div>
+        <div class="contact-me"></div>
+        <div class="footer"></div>
+        <!-- **************** js begin ******************* -->
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>

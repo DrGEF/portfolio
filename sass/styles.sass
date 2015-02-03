@@ -3,14 +3,25 @@
 @import "bootstrap.min.css"
 @import "buttons.css"
 
-// ********************    a reset    *********************
+// ********************     reset     *********************
 a
   color: inherit
   &:hover
     color: inherit
     text-decoration: none
+ul
+  margin: 0
+// ********************   end reset   *********************
+// ********************  for script   *********************
+.hide
+  display: none
+.show
+  display: block
+// ******************  for script end  ********************
 // ********************   top block   *********************
 .top-block
+  min-height: 460px
+  overflow: hidden 
   position: relative
   width: 100%
   height: 100vh
@@ -21,6 +32,7 @@ a
     width: 100%
     height: 100%
     display: table
+    z-index: 1
     .logo-place
       display: table-cell
       vertical-align: middle
@@ -31,7 +43,74 @@ a
         height: 330px
         background-image: url(../images/logo.png)
   .menu-2
-    display: none
+    width: 270px
+    height: 100%
+    position: absolute
+    top: 0
+    right: -270px
+    -webkit-transition: all 0.3s 
+    -moz-transition: all 0.3s 
+    -ms-transition: all 0.3s 
+    -o-transition: all 0.3s 
+    transition: all 0.3s 
+    background-color: $lightThanDark
+    z-index: 2
+    .soc-block
+      background-color: rgba(255, 255, 255, 0.03)
+      // position: absolute
+      // bottom: 50px
+      // right: 0
+      width: 100%
+      height: 70px
+      display: block
+      text-align: center
+      padding: 10px
+      .sep
+        display: inline-block
+        height: 100%
+        width: 4px  
+      .vk, .twitter
+        width: 50px
+        height: 50px
+        background-color: #000
+        display: inline-block  
+    .menu-header
+      height: 70px
+      position: relative
+      width: 100%
+      background-color: $white
+      .menu-logo
+        background-image: url(../images/menu-logo.png)
+        width: 36px
+        height: 39px
+        margin: 0 auto
+        position: relative
+        top: 15px
+      .close-btn
+        position: absolute
+        cursor: pointer
+        left: 26px
+        top: 26px
+        background-image: url(../images/menu_close.png)
+        width: 18px
+        height: 18px
+    // ul style begin
+    ul li 
+      a
+        display: block
+        width: 100%
+        height: 70px
+        font-size: 14px
+        position: relative
+        box-sizing: border-box
+        -moz-box-sizing: border-box
+        background-color: none
+        line-height: 20px
+        padding-top: 25px
+        color: $white
+        span > span span
+          padding: 25px
+    // ul style end 
   .menu-1
     position: absolute
     top: 0
@@ -59,9 +138,11 @@ a
         font-size: 15px
         position: relative
         //******animation and hover effect begin *****
-        -webkit-transition: all 0.4s
-        -moz-transition: all 0.4s
-        transition: all 0.4s
+        -webkit-transition: all 0.4s 
+        -moz-transition: all 0.4s 
+        -ms-transition: all 0.4s 
+        -o-transition: all 0.4s 
+        transition: all 0.4s 
         &:first-child:after
           position: absolute
           content: ''
