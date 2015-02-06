@@ -7,6 +7,7 @@
     </head>
     <body>
         <div class="top-block">
+            <a name="top"></a>
             <div class="menu-1">
                 <div class="open-menu" onclick="openMenu()"><img src="images/menu_button.png" alt="Открыть меню"/></div>
                 <div class="buttons">
@@ -50,58 +51,71 @@
                     <div class="logo"></div>
                 </div>
             </div>
-            <div class="goto-block">
-                <div class="goto">
-                    <span>ololo</span>
-                    <!-- <div class="gimg"></div> -->
-                </div>
+            <div class="goto-block-down">
+                <a href="#dev-block" class="goto">
+                    <span class="scroll" href="#dev-block"><img src="images/arrow-down-black.png" height="8" width="21" alt=""></span>
+                </a>
             </div>
         </div>
         <div class="dev-block">
-            <div class="in-dev">
-                <div class="col-lg-6"><img src="images/dev.png" alt=""/></div>
-                <div class="col-lg-6">
-                    <h2>dev block</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum eius eos illo in, inventore iusto
-                    maiores natus nihil, nisi non omnis optio quos sapiente suscipit tempore voluptas. Eum, quos.</p>
+            <div class="goto-block-up">
+                <a href="#top" class="goto">
+                    <span class="scroll" href="#dev-block"><img src="images/arrow-down.png" height="8" width="21" alt=""></span>
+                </a>
+            </div>
+            <a name="dev-block"></a>
+            <div class="in-global-block">
+                <div class="in">
+                    <div class="col-lg-6"><img src="images/dev.png" alt=""/></div>
+                    <div class="col-lg-6">
+                        <h2>dev block</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorum eius eos illo in, inventore iusto
+                        maiores natus nihil, nisi non omnis optio quos sapiente suscipit tempore voluptas. Eum, quos.</p>
+                    </div>
                 </div>
+            </div>
+            <div class="goto-block-down">
+                <a href="#des-block" style="background-color: #404148;" class="goto">
+                    <span class="scroll" href="#dev-block"><img src="images/arrow-down.png" height="8" width="21" alt=""></span>
+                </a>
             </div>
         </div>
         <div class="design-block">
-            <div class="col-lg-6">
-                <h2>Design block</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias, aut, consequatur corporis dicta dolor eius
-                hic, magnam modi nihil quidem quisquam recusandae reiciendis. Architecto culpa illo impedit maxime sint.</p>
+            <a href="#top" class="goto">
+                <div class="col-lg-6">
+                    <h2>Design block</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias, aut, consequatur corporis dicta dolor eius
+                    hic, magnam modi nihil quidem quisquam recusandae reiciendis. Architecto culpa illo impedit maxime sint.</p>
+                </div>
+                <div class="col-lg-6"><img src="images/design.png" alt=""/></div>
             </div>
-            <div class="col-lg-6"><img src="images/design.png" alt=""/></div>
-        </div>
-        <div class="portfolio">
-            <div class="centered">
-                <h3>Portfolio</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa delectus dolores eius error
-                expedita, harum id ipsa iure, labore minima mollitia officiis quibusdam ullam ut veniam voluptates. Illo,
-                sequi.</p>
-            </div>
-        </div>
-        <div class="contact">
-            <div class="col-lg-6">
-                <ul>
-                    <li><span class="phone-img"></span>+7 (927) 09-09-129</li>
-                    <li><span class="email-img"></span>thedrgef@gmail.com</li>
-                    <li><span class="skype-img"></span>pyramid</li>
-                </ul>
-            </div>
-            <div class="col-lg-6">
-                <div class="twitter">
-                    <!--twitter informer here-->
+            <div class="portfolio">
+                <div class="centered">
+                    <h3>Portfolio</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa delectus dolores eius error
+                    expedita, harum id ipsa iure, labore minima mollitia officiis quibusdam ullam ut veniam voluptates. Illo,
+                    sequi.</p>
                 </div>
             </div>
-        </div>
-        <div class="contact-me"></div>
-        <div class="footer"></div>
-        <!-- **************** js begin ******************* -->
-        <script src="js/jquery-1.11.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
-</html>
+            <div class="contact">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><span class="phone-img"></span>+7 (927) 09-09-129</li>
+                        <li><span class="email-img"></span>thedrgef@gmail.com</li>
+                        <li><span class="skype-img"></span>pyramid</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="twitter">
+                        <!--twitter informer here-->
+                    </div>
+                </div>
+            </div>
+            <div class="contact-me"></div>
+            <div class="footer"></div>
+            <!-- **************** js begin ******************* -->
+            <script src="js/jquery-1.11.2.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/script.js"></script>
+        </body>
+    </html>
