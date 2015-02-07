@@ -51,13 +51,6 @@ body
     span img
       position: relative
       top: 30px
-.dev-block
-  .goto-block-down span img
-    -webkit-transform: rotate(180deg)
-    -moz-transform: rotate(180deg)
-    -ms-transform: rotate(180deg)
-    -o-transform: rotate(180deg)
-    transform: rotate(180deg)
     
 
 // ********************   end reset   *********************
@@ -287,8 +280,8 @@ body
   
 // ************** adaptive top end ***************
 // **************  top block end   ***************
-// ************** dev block begin  ***************
-.dev-block, .design-block, .portfolio
+// **************   blocks begin   ***************
+.dev-block, .des-block, .portfolio, .contact
   height: 100vh
   display: block
   width: 100%
@@ -305,9 +298,13 @@ body
 .dev-block
   .col-lg-6:first-child
     text-align: center
-
+.des-block
+  .col-lg-6:last-child
+    text-align: center
+.contact
+  background-color: $contact 
 
 // none display
-.design-block, .portfolio, .contact, .contact-me, .footer
+.portfolio, .contact-me, .footer
   display: none
 
