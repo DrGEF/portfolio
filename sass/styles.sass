@@ -12,6 +12,8 @@ a
 ul
   margin: 0
 // ********************    general    *********************
+.clr
+  clear: both
 body
   // overflow: hidden
 .goto-block-down, .goto-block-up
@@ -246,6 +248,8 @@ body
     -o-transition: all 0.3s 
     transition: all 0.3s
 @media screen and (max-width: $less500)
+  .goto-block-down, .goto-block-up
+    display: none
   .buttons
     display: none
   .logo
@@ -303,8 +307,46 @@ body
 .des-block
   .col-lg-6:last-child
     text-align: center
+// **************  contact begin   ***************
 .contact
   background-color: $contact 
+  color: #fff
+  .centered
+    display: block
+    width: 100%
+    text-align: center
+    margin-bottom: 30px
+    .text
+      padding: 20px 30px
+      border: 2px solid #fff
+      font-size: 26px
+      font-weight: bold
+      display: inline-block
+  .col-lg-6:first-child
+    font-size: 22px
+    text-align: center
+    .block
+      display: inline-block
+    span
+      float: left
+      line-height: 100px
+      vertical-align: middle
+    span.skype-img, span.email-img, span.phone-img
+      width: 100px
+      height: 100px
+      display: inline-block
+      float: left
+      -webkit-transform: scale(0.6)
+      -moz-transform: scale(0.6)
+      -ms-transform: scale(0.6)
+      -o-transform: scale(0.6)
+      transform: scale(0.6)
+    span.skype-img
+      background-image: url(../images/contact/Skype.png)
+    span.email-img
+      background-image: url(../images/contact/mail.png)
+    span.phone-img
+      background-image: url(../images/contact/phone.png) 
 
 // none display
 .portfolio, .contact-me, .footer
