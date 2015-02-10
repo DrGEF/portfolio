@@ -27,6 +27,8 @@ var main = function() {
 	  });
 	});
 	// плавная прокрутка end
+	//scroll init
+	window.sr = new scrollReveal();
 }
 
 $(document).ready(main);
