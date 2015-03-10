@@ -299,7 +299,7 @@ body
 // ************** adaptive top end ***************
 // **************  top block end   ***************
 // **************   blocks begin   ***************
-.dev-block, .des-block, .portfolio, .contact
+.dev-block, .des-block, .portfolio, .contact, .other-block
   height: 100vh
   display: block
   width: 100%
@@ -320,7 +320,7 @@ body
   .col-lg-6:last-child
     text-align: center
 // **************  contact begin   ***************
-.contact
+.contact, .other-block
   background-color: $contact 
   color: #fff
   .centered
@@ -369,3 +369,31 @@ body
         background-image: url(../images/contact/mail.png)
       span.phone-img
         background-image: url(../images/contact/phone.png) 
+// ***************  other begin   ****************
+.other-block .block .in-block
+  font-size: 24px 
+  a 
+    background-color: #fff
+    color: $contact
+    padding: 4px
+    -webkit-transition: all 0.4s 
+    -moz-transition: all 0.4s 
+    -ms-transition: all 0.4s 
+    -o-transition: all 0.4s 
+    transition: all 0.4s
+    &:hover
+      color: #fff
+      background-color: transparent 
+.other-block .in
+  .bottom
+    position: absolute
+    bottom: 50px
+    .text
+      -webkit-transition: all 0.4s 
+      -moz-transition: all 0.4s 
+      -ms-transition: all 0.4s 
+      -o-transition: all 0.4s 
+      transition: all 0.4s
+      &:hover
+        color: $contact
+        background-color: #FFF 
